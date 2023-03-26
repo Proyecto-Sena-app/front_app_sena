@@ -5,8 +5,9 @@ import Contacto  from './pages/Contacto';
 import IndexRegistro from './pages/registro/IndexRegistro';
 import Layout from './layout/Layout';
 import LayoutInicio from './layout/LayoutInicio';
+import './Images/fondo_difuminado_login.jpg'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import '../src/styles/styles.css';
+
 
 function App() {
   return (

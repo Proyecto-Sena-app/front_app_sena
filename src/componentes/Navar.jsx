@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import '../styles/styles.css'
+import '../styles/stylesInicio.css'
 
 const Navar = () => {
   return (

@@ -1,0 +1,25 @@
+ul{
+    
+    display: flex;
+    justify-content: space-around;
+}        
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+    } 
+    nav li{
+    justify-content: space-around;   
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    background-color: rgb(142, 199, 245);    
+    border:1px solid #000;
+    border-radius: 10px;
+    text-align:center;
+    color:#000;
+    }
+    nav li:hover{
+    background-color:#fff;
+    color:#000;
+    }
