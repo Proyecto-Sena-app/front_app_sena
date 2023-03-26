@@ -1,3 +1,6 @@
-.fondo_azul{
-    background-color: aqua;
+ul {
+    background-color:rgb(75, 75, 165);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
