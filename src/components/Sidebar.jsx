@@ -13,14 +13,14 @@ const Sidebar = () => {
       <i onClick={handleClick} className='bx bx-menu btn'></i>
       <ul className='nav-list'>
         <li>
-          <a href="">
+          <a href="/">
             <i class='bx bx-notepad'></i>
-            Registro usuario 
+            Registro paciente 
           </a>
         </li>
 
         <li>
-          <a href="">
+          <a href="/">
           <i class='bx bxs-file-plus'></i>
 
             Registro Historia Clinica
@@ -28,21 +28,21 @@ const Sidebar = () => {
         </li>
 
         <li>
-          <a href="">
+          <a href="/">
             <i class='bx bxs-file-find'></i>
             Consulta Historia Clinica
           </a>
         </li>
 
         <li>
-          <a href="">
+          <a href="/">
             <i class='bx bx-calendar' ></i>
             Gestion Citas
           </a>
         </li>
 
         <li>
-          <a href="">
+          <a href="/">
             <i class='bx bx-money-withdraw'></i>
             Pagos
           </a>

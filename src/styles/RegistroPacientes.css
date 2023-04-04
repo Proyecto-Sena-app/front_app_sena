@@ -1,0 +1,195 @@
+ .registro-pacientes{
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 79vw;
+    background: var(--text-input-field);
+    height: 100vh;
+    padding: 6px 14px;
+} 
+
+.form-container-registro{
+    margin: 0 30px;
+    background: var(--white);
+    padding: 0 10px;
+    height: 85%;
+} 
+.form-registro-pacientes{
+    display: grid;
+    justify-items: start;
+    justify-content: space-around;
+}
+
+.title-registro-pacientes{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--hospital-blue);
+} 
+.div-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.div-content label {
+    align-items: flex-start;
+}
+.label-reg{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: start;
+}
+.input-reg{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+    min-width: 200px;
+    width: 400px;
+    
+}
+
+#document_type{
+    height: 42px;
+}
+#date ,
+#document_type{
+    color: #6d6d6d;
+}
+.div-buttons{
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 40px;
+}
+.secondary-button-reg{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-blue);
+    color: var(--hospital-blue);
+    width: 20%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+.primary-button-reg{
+    background-color: var(--hospital-blue);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 20%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+@media (max-width: 640px) {
+    .registro-pacientes{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        align-content: center;
+        background: none;   
+        overflow: scroll;
+    }
+   
+    .form-container-registro {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 300px;
+        border: 2px solid var(--text-input-field);
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .title-registro-pacientes{
+        text-align:center;
+        font-size: 30px;
+        font-weight: bold;
+        color: var(--hospital-blue);
+    }
+    .form-registro-pacientes{
+        display: block;        
+    }
+    .form-registro-pacientes .div-content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .label-reg{
+        font-size: var(--sm);
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    .input-reg{
+        background-color: var(--text-input-field);
+        border: none;
+        border-radius: 8px;
+        height: 30px;
+        font-size: var(--md);
+        padding: 6px;
+        margin-bottom: 12px;
+        width: 300px;
+    }
+    #document_type{
+        width: 312px;
+    }
+    .div-buttons{
+        display: block;
+    }
+    .secondary-button-reg{
+        background-color: var(--white);
+        border-radius: 8px;
+        border: 1px solid var(--hospital-blue);
+        color: var(--hospital-blue);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+    }
+    .primary-button-reg{
+        background-color: var(--hospital-blue);
+        border-radius: 8px;
+        border: none;
+        color: var(--white);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+    }
+    .button-cancel{
+        margin-top: 14px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 641px){
+    
+    .input-reg{
+        width: 200px;
+    }
+    #document_type{
+        width: 212px;
+    }
+}
+
+@media (min-width: 1024px){
+    .input-reg{
+        width: 500px;
+    }
+    #document_type{
+        width: 512px;
+    }
+}

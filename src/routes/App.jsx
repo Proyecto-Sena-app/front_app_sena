@@ -7,6 +7,7 @@ import Sidebar from '../components/Sidebar';
 import LayoutInicio from '../layout/LayoutInicio';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from '../components/Navbar';
+import RegistroPacientes from '../pages/RegistroPacientes';
 
 
 function App() {
@@ -19,14 +20,11 @@ function App() {
       </Route>
       <Route path ='/sidebar' element={<Sidebar/>} />
       <Route path ='/registro' element ={<Registro/>}/>
-      <Route path ='/navbar' element ={<Navbar/>}>
-
-             
+      <Route path ='/navbar' element ={<Navbar/>}/>      
+      <Route path ='/registro-paciente' element ={<RegistroPacientes/>}>
       </Route>
     </Routes> 
     </BrowserRouter>
-       
-    
   );
 }
 
