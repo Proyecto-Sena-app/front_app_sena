@@ -22,7 +22,7 @@ body{
     top: 60px;
     left: 0;
     height: 100%;
-    width: 240px;
+    width: 18vw;
     background: var(--hospital-blue);
     padding: 6px 14px;
     display: flex;
