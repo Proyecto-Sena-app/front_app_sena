@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import "../styles/Login.css"
+import "../styles/login.css"
 import Logo from '../Images/logo.png'
 
 
