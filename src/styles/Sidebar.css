@@ -19,7 +19,7 @@ body{
 }
 .sidebar{
     position: fixed;
-    top: 60px;
+    top: 150px;
     left: 0;
     height: 100%;
     width: 18vw;
@@ -74,4 +74,8 @@ body{
 .nav-list{
     padding: 0;
     align-items: center;
+}
+.Contenedor{
+    align-items: flex-start;
+
 }
