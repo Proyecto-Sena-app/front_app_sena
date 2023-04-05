@@ -6,11 +6,11 @@ import { NavLink } from 'react-router-dom'
 const SidebarLinks = () => {
   return (
     <ul className='nav-list'>      
-      <SidebarRoute to='/Registro' title='Registro Paciente' icon='fas fa-clipboard-list' />
+      <SidebarRoute to='/RegistroPacientes' title='Registro Paciente' icon='fas fa-clipboard-list' />
       <SidebarRoute to='/ConsultaHC' title='Consulta Historia Clinica' icon='fas fa-search' />
       <SidebarRoute to='/Gestion' title='Gestion de Citas' icon='fas fa-sync-alt' />
       <SidebarRoute to='/Pagos' title='Consulta de Pagos' icon='fas fa-file-invoice-dollar' />
-      <SidebarRoute to='/Usuarios' title='Registro de usuarios' icon='fas fa-users' />
+      <SidebarRoute to='/Registro' title='Registro de usuarios' icon='fas fa-users' />
     </ul>
   );
 };
