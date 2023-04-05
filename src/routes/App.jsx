@@ -5,9 +5,9 @@ import Contacto  from '../pages/Contacto';
 import Registro from '../pages/Registro';
 import Sidebar from '../components/Sidebar';
 import LayoutInicio from '../layout/LayoutInicio';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Navbar from '../components/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import RegistroPacientes from '../pages/RegistroPacientes';
+import ConsultaHC from '../pages/ConsultaHC';
 
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
         <Route path ='/Contacto' element={<Contacto/>} />
       </Route>
       <Route path ='/sidebar' element={<Sidebar/>} />
-      <Route path ='/registro' element ={<Registro/>}/>
-      <Route path ='/navbar' element ={<Navbar/>}/>      
-      <Route path ='/registro-paciente' element ={<RegistroPacientes/>}>
+        <Route path ='/registro'  element ={<Registro/>}/>
+        <Route path ='/ConsultaHC' element ={<ConsultaHC/>}/>      
+        <Route path ='/registro-paciente' element ={<RegistroPacientes/>}>
       </Route>
     </Routes> 
     </BrowserRouter>

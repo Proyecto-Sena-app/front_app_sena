@@ -19,7 +19,7 @@ body{
 }
 .sidebar{
     position: fixed;
-    top: 150px;
+    top: 10px;
     left: 0;
     height: 100%;
     width: 18vw;
@@ -76,6 +76,6 @@ body{
     align-items: center;
 }
 .Contenedor{
-    align-items: flex-start;
+    background-color: var(--hospital-blue);
 
 }

@@ -5,12 +5,12 @@ import { NavLink } from 'react-router-dom'
 
 const SidebarLinks = () => {
   return (
-    <ul className='sidebar'>      
-      <SidebarRoute to='/Registro' title='Registro' icon='fas fa-home' />
-      <SidebarRoute to='/' title='Consulta Historia Clinica' icon='fas fa-smile-wink' />
-      <SidebarRoute to='/category1' title='Gestion de Citas' icon='fab fa-amazon' />
-      <SidebarRoute to='/category1/page1' title='Consulta de Pagos' icon='fas fa-car' />
-      <SidebarRoute to='/category1/page1' title='Registro de usuarios' icon='fas fa-car' />
+    <ul className='nav-list'>      
+      <SidebarRoute to='/Registro' title='Registro Paciente' icon='fas fa-clipboard-list' />
+      <SidebarRoute to='/ConsultaHC' title='Consulta Historia Clinica' icon='fas fa-search' />
+      <SidebarRoute to='/Gestion' title='Gestion de Citas' icon='fas fa-sync-alt' />
+      <SidebarRoute to='/Pagos' title='Consulta de Pagos' icon='fas fa-file-invoice-dollar' />
+      <SidebarRoute to='/Usuarios' title='Registro de usuarios' icon='fas fa-users' />
     </ul>
   );
 };
@@ -18,7 +18,7 @@ const SidebarLinks = () => {
 
 const SidebarRoute = ({ to, title, icon }) => {
   return (
-    <li>
+    <li className=''>
       <NavLink
         to={to}
       
@@ -39,53 +39,11 @@ const Logo = () => {
     </div>
   );
 };
-const Sidebar = () => {
-    
+const Sidebar = () => {   
  
   return (
-    /*<div id='container-sidebar' className='sidebar inactive'>
-      <img className='img-profile' src={Foto} alt="" />
-      <i onClick={handleClick} className='bx bx-menu btn'></i>
-      <ul className='nav-list'>
-        <li>
-          
-          <a href="/RegistroPaciente">
-            <i class='bx bx-notepad'></i>
-            Registro paciente 
-          </a>
-        </li>
-
-        <li>
-          <a href="/">
-          <i class='bx bxs-file-plus'></i>
-
-            Registro Historia Clinica
-          </a>
-        </li>
-
-        <li>
-          <a href="/">
-            <i class='bx bxs-file-find'></i>
-            Consulta Historia Clinica
-          </a>
-        </li>
-
-        <li>
-          <a href="/">
-            <i class='bx bx-calendar' ></i>
-            Gestion Citas
-          </a>
-        </li>
-
-        <li>
-          <a href="/">
-            <i class='bx bx-money-withdraw'></i>
-            Pagos
-          </a>
-        </li>
-      </ul>
-    </div>*/
-    <div className='contenedor'>
+    
+    <div className='sidebar'>
       <Logo/>
       <SidebarLinks/>
     </div>
