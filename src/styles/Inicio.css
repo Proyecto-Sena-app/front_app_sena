@@ -5,3 +5,43 @@
     left: 280px;
     flex-direction: column;
 }
+.consulta{
+    position: relative;
+    background-color: var(--white);
+    left: 280px;
+}
+.h1x{
+    text-align: center;
+    background-color:var(--text-input-field);
+    padding-right: 230px;
+}
+.labelx{
+    padding-right: 10px;
+    margin-bottom: 10px;
+
+}
+.div-label{
+    margin-bottom: 10px;
+    
+}
+table{
+    
+    width: 70%;
+    text-align: denter;   
+    
+}
+th{
+   width: 25%;
+   text-align: center;
+   vertical-align: center;
+   border: 1px solid #000;
+   border-spacing: 0;
+   background-color: var(--text-input-field);
+}
+td{
+    width: 25%;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid #000;
+    border-spacing: 0;
+}
