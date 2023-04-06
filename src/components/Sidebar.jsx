@@ -6,11 +6,11 @@ import { NavLink } from 'react-router-dom'
 const SidebarLinks = () => {
   return (
     <ul className='nav-list' >      
-      <SidebarRoute to='/Inicio/RegistroPacientes' title='Registro Paciente' icon='fas fa-clipboard-list' />
-      <SidebarRoute to='/Inicio/ConsultaHc' title='Consulta Historia Clinica' icon='fas fa-search' />
-      <SidebarRoute to='/Inicio/Gestion' title='Gestion de Citas' icon='fas fa-sync-alt' />
-      <SidebarRoute to='/Inicio/Pagos' title='Consulta de Pagos' icon='fas fa-file-invoice-dollar' />
-      <SidebarRoute to='/Inicio/Registro' title='Registro de usuarios' icon='fas fa-users' />
+      <SidebarRoute to='/Inicio/RegistroPacientes' title='Registro Paciente'         icon='fas fa-clipboard-list' />
+      <SidebarRoute to='/Inicio/ConsultaHc'        title='Consulta Historia Clinica' icon='fas fa-search' />
+      <SidebarRoute to='/Inicio/Gestion'           title='Gestion de Citas'          icon='fas fa-sync-alt' />
+      <SidebarRoute to='/Inicio/Pagos'             title='Gestion de Pagos'         icon='fas fa-file-invoice-dollar' />
+      <SidebarRoute to='/Inicio/Registro'          title='Registro de usuarios'      icon='fas fa-users' />
     </ul>
   );
 };
@@ -20,8 +20,7 @@ const SidebarRoute = ({ to, title, icon }) => {
   return (
     <li >
       <NavLink
-        to={to}
-      
+        to={to}      
       >
         <div className=''>
           <i className={icon} />

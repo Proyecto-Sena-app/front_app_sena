@@ -10,6 +10,7 @@ import RegistroHistoria from '../pages/Inicio/RegistroHistoria';
 import ConsultaHC from '../pages/Inicio/ConsultaHC';
 import PrivateLayout from '../layout/PrivateLayout';
 import Index from '../pages/Inicio/Index';
+import Pagos from '../pages/Inicio/Pagos';
 
 function App() {
   return (
@@ -20,11 +21,12 @@ function App() {
         <Route path ='/Contacto' element={<Contacto/>} />
       </Route>
       <Route path='/Inicio' element ={<PrivateLayout/>}>
-       <Route path=''                  element = {<Index/>}/>
+       <Route path=''                   element = {<Index/>}/>
         <Route path='RegistroPacientes' element = {<RegistroPacientes/>}/>
-        <Route path='RegistroHistoria' element = {<RegistroHistoria/>}/>
-        <Route path='ConsultaHc'       element = {<ConsultaHC/>}/>
-        <Route path='Registro'         element = {<Registro/>}/>   
+        <Route path='RegistroHistoria'  element = {<RegistroHistoria/>}/>
+        <Route path='ConsultaHc'        element = {<ConsultaHC/>}/>
+        <Route path='Registro'          element = {<Registro/>}/>
+        <Route path='Pagos'             element = {<Pagos/>}/>    
       </Route>    
       
     </Routes> 
