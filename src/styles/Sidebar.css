@@ -1,5 +1,4 @@
 @import './vars.css';
-
 body{
     position: relative;
     min-height: 100vh;
@@ -19,7 +18,7 @@ body{
 }
 .sidebar{
     position: fixed;
-    top: 10px;
+    top: 60px;
     left: 0;
     height: 100%;
     width: 18vw;
@@ -74,8 +73,4 @@ body{
 .nav-list{
     padding: 0;
     align-items: center;
-}
-.Contenedor{
-    background-color: var(--hospital-blue);
-
 }

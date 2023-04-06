@@ -1,0 +1,7 @@
+.divx{
+    background-color: blue;
+    position: relative;
+    top: 50px;
+    left: 280px;
+    flex-direction: column;
+}

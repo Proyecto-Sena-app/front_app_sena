@@ -1,6 +1,37 @@
 @import './vars.css';
 
-.navbar{
+.navbar{ 
+    position: relative; 
+    background-color: var(--very-light-pink);    
+    width: 100%;
+    height: 55px;
+}
+.ulx{
+    display: flex;
+    justify-content: space-between
+    ;
+    margin-top: 0%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    list-style: none;
+    
+}
+.lix{
+    border-radius: 10px;
+    background-color: var(--hospital-blue);
+    padding: 10px;
+        
+}
+.lix :hover{
+    padding: 20px;    
+    border-radius: 15px;
+}
+a{
+    text-decoration: none;    
+}
+
+/*.navbar{
     display: flex;
     justify-content: flex-end;
     padding: 0 24px;
@@ -8,9 +39,7 @@
     background: var(--hospital-blue);
 }
 
-.navbar-logo{
-    width: 50px;
-}
+
 
 .navbar-right ul {
     list-style: none;
@@ -46,7 +75,7 @@
 .navbar-profile p{
     margin: 0;
     padding: 2px;
-}
+}*/
 
 
 

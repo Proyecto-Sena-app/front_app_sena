@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import "../styles/login.css"
-import Logo from '../Images/logo.png'
+import "../../styles/login.css"
+import Logo from '../../Images/logo.png'
 
 
 const Login = () => {

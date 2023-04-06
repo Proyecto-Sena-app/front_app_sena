@@ -1,29 +1,32 @@
 /*import logo from './logo.svg';
 import './App.css';*/
-import Login from '../pages/Login';
-import Contacto  from '../pages/Contacto';
-import Registro from '../pages/Registro';
-/*import Sidebar from '../components/Sidebar';*/
+import Login from '../pages/Authe/Login';
+import Contacto  from '../pages/Authe/Contacto';
+import Registro from '../pages/Inicio/Registro';
 import LayoutInicio from '../layout/LayoutInicio';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import RegistroPacientes from '../pages/RegistroPacientes';
-import ConsultaHC from '../pages/ConsultaHC';
-import Layout from '../layout/Layout';
-
+import RegistroPacientes from '../pages/Inicio/RegistroPacientes';
+import RegistroHistoria from '../pages/Inicio/RegistroHistoria';
+import ConsultaHC from '../pages/Inicio/ConsultaHC';
+import PrivateLayout from '../layout/PrivateLayout';
+import Index from '../pages/Inicio/Index';
 
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
+    <Routes>    
       <Route path ='/' element ={<LayoutInicio />}>
         <Route path='' element ={<Login/>}/>
         <Route path ='/Contacto' element={<Contacto/>} />
       </Route>
-      <Route path ='/' element={<Layout/>} />
-        <Route path ='/registro'  element ={<Registro/>}/>
-        <Route path ='/ConsultaHC' element ={<ConsultaHC/>}/>      
-        <Route path ='/RegistroPacientes' element ={<RegistroPacientes/>}>
-      </Route>
+      <Route path='/Inicio' element ={<PrivateLayout/>}>
+       <Route path=''                  element = {<Index/>}/>
+        <Route path='RegistroPacientes' element = {<RegistroPacientes/>}/>
+        <Route path='RegistroHistoria' element = {<RegistroHistoria/>}/>
+        <Route path='ConsultaHc'       element = {<ConsultaHC/>}/>
+        <Route path='Registro'         element = {<Registro/>}/>   
+      </Route>    
+      
     </Routes> 
     </BrowserRouter>
   );

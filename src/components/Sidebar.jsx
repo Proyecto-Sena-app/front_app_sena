@@ -5,12 +5,12 @@ import { NavLink } from 'react-router-dom'
 
 const SidebarLinks = () => {
   return (
-    <ul className='nav-list'>      
-      <SidebarRoute to='/RegistroPacientes' title='Registro Paciente' icon='fas fa-clipboard-list' />
-      <SidebarRoute to='/ConsultaHC' title='Consulta Historia Clinica' icon='fas fa-search' />
-      <SidebarRoute to='/Gestion' title='Gestion de Citas' icon='fas fa-sync-alt' />
-      <SidebarRoute to='/Pagos' title='Consulta de Pagos' icon='fas fa-file-invoice-dollar' />
-      <SidebarRoute to='/Registro' title='Registro de usuarios' icon='fas fa-users' />
+    <ul className='nav-list' >      
+      <SidebarRoute to='/Inicio/RegistroPacientes' title='Registro Paciente' icon='fas fa-clipboard-list' />
+      <SidebarRoute to='/Inicio/ConsultaHc' title='Consulta Historia Clinica' icon='fas fa-search' />
+      <SidebarRoute to='/Inicio/Gestion' title='Gestion de Citas' icon='fas fa-sync-alt' />
+      <SidebarRoute to='/Inicio/Pagos' title='Consulta de Pagos' icon='fas fa-file-invoice-dollar' />
+      <SidebarRoute to='/Inicio/Registro' title='Registro de usuarios' icon='fas fa-users' />
     </ul>
   );
 };
@@ -18,14 +18,14 @@ const SidebarLinks = () => {
 
 const SidebarRoute = ({ to, title, icon }) => {
   return (
-    <li className=''>
+    <li >
       <NavLink
         to={to}
       
       >
         <div className=''>
           <i className={icon} />
-          <span className='text-sm  ml-2'>{title}</span>
+          <span >{title}</span>
         </div>
       </NavLink>
     </li>

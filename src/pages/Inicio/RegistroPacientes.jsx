@@ -1,4 +1,4 @@
-import '../styles/RegistroPacientes.css'
+import '../../styles/RegistroPacientes.css'
 
 const RegistroPacientes = () => {
 

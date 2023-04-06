@@ -1,6 +1,6 @@
 import React from 'react'
-import '../styles/Registro.css'
-import Logo from '../Images/logo.png'
+import '../../styles/Registro.css'
+import Logo from '../../Images/logo.png'
 
 const Registro = () => {
   return (

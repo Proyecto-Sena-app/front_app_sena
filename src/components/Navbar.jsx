@@ -5,12 +5,12 @@ import '../styles/Navbar.css'
 const Navbar = () => {
   return (
     <nav className='navbar'>      
-      <div className='navbar-right'>
-        <ul>
-          <li className='navbar-report'><a href=''>Generar reporte</a></li>
-          <li className="navbar-profile"><a href=''>Maria Torres</a></li>
-        </ul> 
-      </div>
+      <ul className='ulx'>
+        <li className='lix'><a href='x'>Inicio   </a></li>
+        <li className='lix'><a href='x'>Acerca de</a></li>
+        <li className='lix'><a href='x'>Equipo   </a></li>
+        <li className='lix'><a href='x'>Contacto </a></li>
+      </ul>
     </nav>
   )
 }
