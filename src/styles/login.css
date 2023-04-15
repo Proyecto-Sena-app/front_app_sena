@@ -58,9 +58,7 @@ body{
 .input-email {
   margin-bottom: 22px;
 }
-.primary-button {
-  
-}
+
 .secondary-button {
   background-color: var(--white);
   border-radius: 8px;
