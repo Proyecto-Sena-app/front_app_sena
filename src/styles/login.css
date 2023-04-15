@@ -35,10 +35,11 @@ body{
 }
 .form a {
   color: var(--hospital-blue);
-  font-size: var(--sm);
+   
+  text-decoration: none;  
+  color: white;
   text-align: center;
-  text-decoration: none;
-  margin-bottom: 52px;
+  padding-top: 20px;
 }
 .label {
   font-size: var(--sm);
@@ -58,15 +59,7 @@ body{
   margin-bottom: 22px;
 }
 .primary-button {
-  background-color: var(--hospital-blue);
-  border-radius: 8px;
-  border: none;
-  color: var(--white);
-  width: 100%;
-  cursor: pointer;
-  font-size: var(--md);
-  font-weight: bold;
-  height: 50px;
+  
 }
 .secondary-button {
   background-color: var(--white);
@@ -78,10 +71,14 @@ body{
   font-size: var(--md);
   font-weight: bold;
   height: 50px;
+  align-content: center;
+ 
 }
 .login-button {
   margin-top: 14px;
   margin-bottom: 30px;
+  text-align: center;
+  
 }
 @media (max-width: 640px) {
   .logo{

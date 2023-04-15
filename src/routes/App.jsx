@@ -11,6 +11,7 @@ import ConsultaHC from '../pages/Inicio/ConsultaHC';
 import PrivateLayout from '../layout/PrivateLayout';
 import Index from '../pages/Inicio/Index';
 import Pagos from '../pages/Inicio/Pagos';
+import Citas from '../pages/Inicio/Citas'
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
         <Route path='RegistroHistoria'  element = {<RegistroHistoria/>}/>
         <Route path='ConsultaHc'        element = {<ConsultaHC/>}/>
         <Route path='Registro'          element = {<Registro/>}/>
-        <Route path='Pagos'             element = {<Pagos/>}/>    
+        <Route path='Pagos'             element = {<Pagos/>}/> 
+        <Route path='citas'             element = {<Citas/>} />
       </Route>    
       
     </Routes> 

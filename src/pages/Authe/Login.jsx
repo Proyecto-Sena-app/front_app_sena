@@ -8,7 +8,7 @@ const Login = () => {
     const form = useRef(null);
 
     /*funcion para manejar el submit del form*/
-    const handleSubmit = (event) =>{
+    /*const handleSubmit = (event) =>{
         event.preventDefault(); //evita que se envie la inf por url y siga con la logica
         const formData = new FormData(form.current); 
         const data = {
@@ -16,7 +16,7 @@ const Login = () => {
             password: formData.get('password')
         }
         console.log(data);
-    }
+    }*/
 
     return (
         <div className="login">
@@ -31,7 +31,9 @@ const Login = () => {
                 <label htmlFor="password" className="label">Contraseña</label>
                 <input type="password" name="password" placeholder="*********" className="input input-password"/>
 
-                <button onClick={handleSubmit} className="primary-button login-button">Iniciar sesión</button>
+                
+                <a href='/Inicio'className="primary-button">Iniciar Sesión</a>
+                
 
                 <a href="/">Olvide mi contraseña</a>
               </form>
