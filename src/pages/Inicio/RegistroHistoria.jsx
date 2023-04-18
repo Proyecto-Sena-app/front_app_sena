@@ -1,5 +1,5 @@
 import React from 'react'
-/*import '../../styles/RegistroHistoria.css'*/
+import '../../styles/RegistroHistoria.css'
 
 const RegistroHistoria = () =>{
     return(

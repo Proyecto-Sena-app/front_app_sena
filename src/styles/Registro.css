@@ -6,8 +6,7 @@ body {
 }
 
 .registre{
-    width: 100%;
-    height: 100vh;
+    height: auto;
     display: grid;
     place-items: center;
     align-content: center;

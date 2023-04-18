@@ -3,6 +3,7 @@ import "../../styles/login.css"
 import Logo from '../../Images/logo.png'
 
 
+
 const Login = () => {
 
     const form = useRef(null);
@@ -38,7 +39,9 @@ const Login = () => {
                 <a href="/">Olvide mi contraseña</a>
               </form>
 
-              <button className="secondary-button signup-button" >Crear cuenta</button>
+
+             
+             <button className="secondary-button signup-button" ><a href="/Registro">Crear cuenta</a></button>
             </div>
         </div>
     )

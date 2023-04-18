@@ -2,7 +2,7 @@
 import './App.css';*/
 import Login from '../pages/Authe/Login';
 import Contacto  from '../pages/Authe/Contacto';
-import Registro from '../pages/Inicio/Registro';
+import Registro from '../pages/Authe/Registro';
 import LayoutInicio from '../layout/LayoutInicio';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import RegistroPacientes from '../pages/Inicio/RegistroPacientes';
@@ -19,6 +19,7 @@ function App() {
     <Routes>    
       <Route path ='/' element ={<LayoutInicio />}>
         <Route path='' element ={<Login/>}/>
+        <Route path='Registro'          element = {<Registro/>}/>
         <Route path ='/Contacto' element={<Contacto/>} />
       </Route>
       <Route path='/Inicio' element ={<PrivateLayout/>}>
@@ -26,7 +27,7 @@ function App() {
         <Route path='RegistroPacientes' element = {<RegistroPacientes/>}/>
         <Route path='RegistroHistoria'  element = {<RegistroHistoria/>}/>
         <Route path='ConsultaHc'        element = {<ConsultaHC/>}/>
-        <Route path='Registro'          element = {<Registro/>}/>
+        
         <Route path='Pagos'             element = {<Pagos/>}/> 
         <Route path='citas'             element = {<Citas/>} />
       </Route>    
